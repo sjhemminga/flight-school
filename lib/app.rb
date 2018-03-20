@@ -5,7 +5,7 @@ require_relative "radar"
 
 class FlightSchool < Sinatra::Base
   get "/" do
-    erb :index, locals: { airports: ["JFK", "SF", "OHR", "FWA", "OAK", "SEA", "LAX", "AMS"] }
+    erb :index, locals: { airports: ["JFK", "SFO", "OHR", "FWA", "OAK", "SEA", "LAX"] }
   end
 
   get "/airports/:code" do
